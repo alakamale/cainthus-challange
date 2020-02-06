@@ -14,7 +14,7 @@
 
 # Results
 # Task 1 
-### First Run Output
+### Output of first run
 ```Number of test cases : 1
 1 Pair
 Enter first date: Sat 30 May 2005 13:54:36 +0700
@@ -22,7 +22,7 @@ Enter second date: Sun 30 Aug 1992 10:10:00 +0530
 Output: 
 402286476
 ```
-### Second Run Output
+### Output of second run
 ```
 Number of test cases : 2
 1 Pair
@@ -37,21 +37,21 @@ Output:
 ```
 
 # Task 2
-### First Run Output
+### Output of first run
 ```
 Number of email addresses : 2
 Enter email 1 : A.lakmale@gma_il.com
 Enter email 2 : A.lakmale@gmail.com
 Outut: ['A.lakmale@gmail.com']
 ```
-### Second Run Output
+### Output of second run
 ```
 Number of email addresses : 2
 Enter email 1 : incorrect_email@hypen_included@moreThanThreeLetters
 Enter email 2 : inc@orrect_email@h_ok@com
 Outut: []
 ```
-### Third Run Output
+### Output of third run
 ```
 Number of email addresses : 4
 Enter email 1 : clara@example.com
