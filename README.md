@@ -4,7 +4,7 @@
 - datetime
 - re
 
-# How to Execute (API)
+# How to Execute
 - ```python date_diffrence.py```<br/>
 - ```python validate_email.py```<br/>
 
