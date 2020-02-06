@@ -3,7 +3,6 @@
 # Requirements
 - datetime
 - re
-- pylint
 
 # How to Execute (API)
 - ```python date_diffrence.py```<br/>
