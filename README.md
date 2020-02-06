@@ -1,4 +1,4 @@
-# cainthus-challange
+# Cainthus Challange
 
 # Requirements
 - datetime
