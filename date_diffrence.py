@@ -1,6 +1,6 @@
 """   Python challenge 1
 Given two timestamps, in different time zones of the format:
-        >>>  Day dd Mon yyyy hh:mm:ss +xxxx
+            >>  Day dd Mon yyyy hh:mm:ss +xxxx
 where +xxxx represents the time zone.
 Following program prints the absolute difference (in seconds) between them.
 """
@@ -13,8 +13,14 @@ def solution(time_1, time_2):
     :param time_2: end date
     :return: absolute difference in seconds
     """
-    time_1 = datetime.strptime(time_1, "%a %d %b %Y %H:%M:%S %z")
-    time_2 = datetime.strptime(time_2, "%a %d %b %Y %H:%M:%S %z")
+    try:
+        time_1 = datetime.strptime(time_1, "%a %d %b %Y %H:%M:%S %z")
+        time_2 = datetime.strptime(time_2, "%a %d %b %Y %H:%M:%S %z")
+    except ValueError:
+        return "Invalid Timestamp!"
+
+    if (time_1.year > 3000 or time_2.year > 3000):
+        return 'Invalid Year!'
     return int(abs(time_1 - time_2).total_seconds())
 
 
