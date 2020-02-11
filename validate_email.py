@@ -15,7 +15,9 @@ def check(email_id):
     :param email_id: email address
     :return: boolean value
     """
-    regex = '^\w+([\.-]?\w+)*@([a-zA-Z0-9])+(\.\w{1,3})$'
+    if not email_id:
+        return False
+    regex = '^\w+([\.-]?\w+)*@([a-zA-Z0-9])+(\.\w{1,3})$'           #pylint: disable=W1401
     if re.fullmatch(regex, email_id):
         return True
     return False
